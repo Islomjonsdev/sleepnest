@@ -120,3 +120,54 @@
     @apply bg-background text-foreground;
   }
 }
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Unbounded", sans-serif;
+  scroll-behavior: smooth;
+}
+
+
+/* unbounded-300 - latin */
+@font-face {
+  font-display: swap; 
+  font-family: 'Unbounded';
+  font-style: normal;
+  font-weight: 300;
+  src: url('../public/fonts/unbounded-v8-latin-300.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* unbounded-regular - latin */
+@font-face {
+  font-display: swap; 
+  font-family: 'Unbounded';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../public/fonts/unbounded-v8-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* unbounded-500 - latin */
+@font-face {
+  font-display: swap; 
+  font-family: 'Unbounded';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../public/fonts/unbounded-v8-latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* unbounded-600 - latin */
+@font-face {
+  font-display: swap; 
+  font-family: 'Unbounded';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../public/fonts/unbounded-v8-latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* unbounded-700 - latin */
+@font-face {
+  font-display: swap; 
+  font-family: 'Unbounded';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../public/fonts/unbounded-v8-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
