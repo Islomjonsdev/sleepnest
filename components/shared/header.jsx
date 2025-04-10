@@ -57,7 +57,7 @@ const Header = () => {
                         className={
                           isActive
                             ? "text-[#a17f4a] font-semibold text-[20px]"
-                            : "text-[#0000098] text-[20px]"
+                            : "text-[#0000098] text-[20px] font-light"
                         }
                         href={to}
                       >
@@ -107,7 +107,7 @@ const Header = () => {
                         className={
                           isActive
                             ? "text-[#000] font-semibold text-[20px]"
-                            : "text-[#000] text-[20px]"
+                            : "text-[#000] text-[20px] font-light"
                         }
                         href={to}
                       >
