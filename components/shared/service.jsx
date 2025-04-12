@@ -6,7 +6,7 @@ const Service = () => {
   return (
     <section className="mb-[100px]">
       <div className='max-w-[1440px] w-full mx-auto px-[20px]'>
-        <ul className="flex flex-wrap items-center justify-between my-4">
+        <ul className="flex flex-wrap items-center justify-between my-4 md:flex justify-center">
           {serviceData?.map(({ id, image, title, text }) => (
             <li className="flex flex-col lg:flex-row items-center gap-[30px]" key={id}>
               <Image src={image} alt="image" width={50} height={50} />
