@@ -34,8 +34,8 @@ const Header = () => {
   const option = ["Eng", "Ru", "Uz"];
   return (
     <>
-      <header className="bg-white py-[10px] bg-white py-[10px] shadow-md">
-        <div className="max-w-[1400px] w-full mx-auto px-[20px]">
+      <header className="bg-white py-[10px] bg-white py-[10px] shadow-md mb-[25px]">
+        <div className="max-w-[1440px] w-full mx-auto px-[20px]">
           <div className="flex items-center justify-between">
             <Link href={"/"}>
               <Image
@@ -102,7 +102,11 @@ const Header = () => {
                   const isActive =
                     to === "/" ? pathName === "/" : pathName.startsWith(to);
                   return (
-                        <li className="py-[5px] px-[8px]" onClick={() => setOpenModal(false)}  key={to}>
+                    <li
+                      className="py-[5px] px-[8px]"
+                      onClick={() => setOpenModal(false)}
+                      key={to}
+                    >
                       <Link
                         className={
                           isActive
