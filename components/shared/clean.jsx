@@ -3,7 +3,7 @@ import { Button } from "../ui/button";
 
 const Clean = () => {
   return (
-    <section>
+    <section className="mb-[150px]">
       <div className="max-w-[1440px] w-full mx-auto px-[20px] relative">
         <div className="bg-[#464351] p-[70px] flex justify-between rounded-[30px]">
           <div>
