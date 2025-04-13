@@ -6,25 +6,22 @@ const Hero = () => {
   return (
     <section className="mb-[100px]">
       <div className="max-w-[1440px] w-full mx-auto px-[20px]">
-        <div className="bg-[red] h-[408px] relative flex items-center justify-between pr-[20px]">
-          <div>
-            <Image
-              className="absolute top-[-60px] left-[-130px]"
-              src={heroImage}
-              width={1090}
-              height={638}
-              alt="heoimage"
-            />
-          </div>
-
-          <div className="text-end">
-            <p className="text-[20px] text-[#7a5c33] font-bold leading-[20px]">
+        <div className="relative rounded-xl animate-colorCycle pb-[50px] md:pb-[200px] lg:-[300px] mb-10 bg-[#ecdabf] pt-[70px]">
+          <Image
+            src={heroImage}
+            alt="hero"
+            className="absolute w-[400px] lg:-left-40 lg:-top-10 lg:w-[1300px] md:-left-32 md:-top-12 md:w-[1000px]"
+          />
+          <div className="flex flex-col pt-8 font-bold pr-7 text-end">
+            <h1 className="text-xl md:text-2xl z-10 text-[#7a5c33] leading-5">
               Environmental
-            </p>
-            <p className="my-[30px] text-[35px] text-[#a17f4a] leading-[40px]">
+            </h1>
+            <h1 className="text-[#a17f4a] z-10 text-[35px] md:text-[45] lg:text-[55px]">
               Clean Sleep
-            </p>
-            <h3 className="text-[#a17f4a] text-[55px] ">Products</h3>
+            </h1>
+            <h1 className="text-[#a17f4a] z-10 text-[45px] md:text-[55] lg:text-[95px]">
+              Products
+            </h1>
           </div>
         </div>
       </div>

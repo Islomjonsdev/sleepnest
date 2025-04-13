@@ -8,8 +8,6 @@ import React from "react";
 const Products = () => {
   const params = useParams();
   const id = params?.id;
-  console.log(id);
-
   const products = ProductCards?.find((item) => item?.id.toString() === id);
 
   const data = {
