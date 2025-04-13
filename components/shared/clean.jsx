@@ -24,11 +24,11 @@ const Clean = () => {
             </h1>
             <p className="text-xl font-semibold text-white">Material quality</p>
           </div>
-          <div className="z-10 space-y-5 md:space-y-2 md:text-start md:mt-14">
-            <h1 className="text-[30px] font-semibold max-w-[400px] text-center  text-white md:text-start md:leading-7">
-              Ecologically Clean Sleep Products
+          <div className="z-10 space-y-5 md:space-y-2 md:text-start md:mt-14 max-w-[450px] w-full">
+            <h1 className="text-[30px] font-semibold text-center  text-white md:text-start md:leading-7">
+              "Ecologically Clean Sleep Products"
             </h1>
-            <p className="text-base max-w-[400px] text-white font-semibold md:leading-5 md:w-[320px]">
+            <p className="text-base text-white font-semibold md:leading-5">
               has been a company producing cotton fabrics for use all over the
               world for many years
             </p>

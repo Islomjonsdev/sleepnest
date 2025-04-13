@@ -65,7 +65,7 @@ const Products = () => {
               </tbody>
             </table>
 
-            <p className="text-[#ff0000] text-4 my-4">Category: Winter Collection</p>
+            <p className="text-[#ff0000] text-4 my-4"><span>Category:</span> Winter Collection</p>
           </div>
         </div>
       </div>
