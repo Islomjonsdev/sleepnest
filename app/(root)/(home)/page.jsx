@@ -1,3 +1,4 @@
+import AutumunCollection from '@/components/shared/autumun-collection'
 import Clean from '@/components/shared/clean'
 import Hero from '@/components/shared/hero'
 import Products from '@/components/shared/products'
@@ -13,6 +14,7 @@ const page = () => {
       <Clean />
       <Products />
       <Quality />
+      <AutumunCollection />
     </>
   )
 }

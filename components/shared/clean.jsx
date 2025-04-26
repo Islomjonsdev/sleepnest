@@ -32,11 +32,9 @@ const Clean = () => {
               has been a company producing cotton fabrics for use all over the
               world for many years
             </p>
-            <Link href="/">
               <button className="px-4 py-[6px] rounded-xl cursor-pointer bg-white mt-2">
                 Collection
               </button>
-            </Link>
           </div>
         </div>
       </div>
