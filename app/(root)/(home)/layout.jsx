@@ -5,7 +5,7 @@ export default function HomeLayout({ children }) {
   return (
     <>
       <Header />
-      <main>{children}</main>
+      <main className="pt-[115px]">{children}</main>
       <Footer />
     </>
   );

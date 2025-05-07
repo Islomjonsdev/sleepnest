@@ -34,7 +34,7 @@ const Header = () => {
   const option = ["Eng", "Ru", "Uz"];
   return (
     <>
-      <header className="bg-white py-[10px] bg-white py-[10px] shadow-md mb-[25px]">
+      <header className="bg-white py-[10px] bg-white py-[10px] shadow-md  fixed top-0 z-50 w-full">
         <div className="max-w-[1440px] w-full mx-auto px-[20px]">
           <div className="flex items-center justify-between">
             <Link href={"/"}>

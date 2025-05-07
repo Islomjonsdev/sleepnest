@@ -13,7 +13,7 @@ const Quality = () => {
               alt="qualityImg"
               width={394}
               height={284}
-              className=" md:w-[700px] md:h-[504px] lg:w-[800px] lg:h-[576px]"
+              className="md:w-[700px] md:h-[504px] lg:w-[800px] lg:h-[576px]"
             />
           </div>
           <div>
