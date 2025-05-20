@@ -16,9 +16,9 @@ const Products = () => {
     bedding: "260×280 cm (1 piece)",
     bed: "160x220 cm (2 pieces)",
     size: "	Custom Size",
-    manufacturer: "Environmental Clean Sleep Product"
-  }
-  const { material, pillowCase, bedding, bed, size, manufacturer } = data
+    manufacturer: "Environmental Clean Sleep Product",
+  };
+  const { material, pillowCase, bedding, bed, size, manufacturer } = data;
   return (
     <div>
       <div className="max-w-[1440px] w-full mx-auto px-[20px]">
@@ -34,38 +34,48 @@ const Products = () => {
           </div>
 
           <div className="w-[50%]">
-            <h1 className="my-[20px] text-black text-[24px] font-bold">{products?.productText}</h1>
+            <h1 className="my-[20px] text-black text-[24px] font-bold">
+              {products?.productText}
+            </h1>
 
             <table className="w-full border-collapse border border-[#ddd]">
               <tbody className="p-[15px]">
                 <tr className="border border-[#ddd]">
-                    <td className="p-[15px] border border-[#ddd]">Material:</td>
-                    <td className="p-[15px] border-[#ddd]">{material}</td>
+                  <td className="p-[15px] border border-[#ddd]">Material:</td>
+                  <td className="p-[15px] border-[#ddd]">{material}</td>
                 </tr>
                 <tr className="border border-[#ddd]">
-                    <td className="p-[15px] border border-[#ddd]">Pillowcase:</td>
-                    <td className="p-[15px] border border-[#ddd]">{pillowCase}</td>
+                  <td className="p-[15px] border border-[#ddd]">Pillowcase:</td>
+                  <td className="p-[15px] border border-[#ddd]">
+                    {pillowCase}
+                  </td>
                 </tr>
                 <tr className="border border-[#ddd]">
-                    <td className="p-[15px] border border-[#ddd]">Bedding:</td>
-                    <td className="p-[15px] border border-[#ddd]">{bedding}</td>
+                  <td className="p-[15px] border border-[#ddd]">Bedding:</td>
+                  <td className="p-[15px] border border-[#ddd]">{bedding}</td>
                 </tr>
                 <tr className="border border-[#ddd]">
-                    <td className="p-[15px] border border-[#ddd]">Bed:</td>
-                    <td className="p-[15px] bordr border-[#ddd]">{bed}</td>
+                  <td className="p-[15px] border border-[#ddd]">Bed:</td>
+                  <td className="p-[15px] bordr border-[#ddd]">{bed}</td>
                 </tr>
                 <tr className="border border-[#ddd]">
-                    <td className="p-[15px] border border-[#ddd]">Size:</td>
-                    <td className="p-[15px] bordr border-[#ddd]">{size}</td>
+                  <td className="p-[15px] border border-[#ddd]">Size:</td>
+                  <td className="p-[15px] bordr border-[#ddd]">{size}</td>
                 </tr>
                 <tr className="border border-[#ddd]">
-                    <td className="p-[15px] border border-[#ddd]">Manufacturer:</td>
-                    <td className="p-[15px] bordr border-[#ddd]">{manufacturer}</td>
+                  <td className="p-[15px] border border-[#ddd]">
+                    Manufacturer:
+                  </td>
+                  <td className="p-[15px] bordr border-[#ddd]">
+                    {manufacturer}
+                  </td>
                 </tr>
               </tbody>
             </table>
 
-            <p className="text-[#ff0000] text-4 my-4"><span>Category:</span> Winter Collection</p>
+            <p className="text-[#ff0000] text-4 my-4">
+              <span>Category:</span> Winter Collection
+            </p>
           </div>
         </div>
       </div>

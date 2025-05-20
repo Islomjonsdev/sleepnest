@@ -1,7 +1,6 @@
 import Image from "next/image";
 import React from "react";
 import { FcLike } from "react-icons/fc";
-import { Button } from "../ui/button";
 
 const Cards = ({ productImage, productText }) => {
   return (
