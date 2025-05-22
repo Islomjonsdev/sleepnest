@@ -1,8 +1,10 @@
 import React from 'react'
 
-const SummerCards = () => {
+const SummerCards = ({text}) => {
   return (
-    <div>SummerCards</div>
+    <div className='max-w-[256px] w-full bg-[red]'>
+      {text}
+    </div>
   )
 }
 

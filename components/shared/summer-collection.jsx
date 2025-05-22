@@ -1,4 +1,5 @@
 import { summerCollectionData } from "@/api/summerCollectionData";
+import Link from "next/link";
 import React from "react";
 import SummerCards from "./summer-cards";
 import Title from "./title";
@@ -12,9 +13,11 @@ const SummerCollection = () => {
           text="Ecologically Clean Sleep Products"
         />
 
-        <div>
-          {summerCollectionData?.map(({id, text}) => (
-            <SummerCards key={id} />
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-5">
+          {summerCollectionData?.map(({ id, text }) => (
+            <Link href={`/summer-collection/${id}`} key={id}>
+              <SummerCards text={text} />
+            </Link>
           ))}
         </div>
       </div>
