@@ -5,6 +5,7 @@ import Material from '@/components/shared/material'
 import Products from '@/components/shared/products'
 import Quality from '@/components/shared/quality'
 import Service from '@/components/shared/service'
+import SummerCollection from '@/components/shared/summer-collection'
 import React from 'react'
 
 const page = () => {
@@ -17,6 +18,7 @@ const page = () => {
       <Quality />
       <AutumunCollection />
       <Material />
+      <SummerCollection />
     </>
   )
 }
