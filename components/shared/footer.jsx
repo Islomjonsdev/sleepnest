@@ -105,7 +105,7 @@ const Footer = () => {
                 Subscribe
               </button>
 
-              <p>Select at least one list.</p>
+              <p className="mt-[40px] mb-[14px] text-[#4e4e4e] text-[14px]">Select at least one list.</p>
             </form>
           </div>
         </div>
