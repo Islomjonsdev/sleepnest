@@ -6,7 +6,7 @@ import Title from "./title";
 
 const SummerCollection = () => {
   return (
-    <div className="pt-[200px]">
+    <section className="pt-[200px] pb-[50px]">
       <div className="max-w-[1440px] w-full mx-auto px-[20px]">
         <Title
           label="Summer Collection"
@@ -14,14 +14,14 @@ const SummerCollection = () => {
         />
 
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-5">
-          {summerCollectionData?.map(({ id, text }) => (
+          {summerCollectionData?.map(({ id, text, img }) => (
             <Link href={`/summer-collection/${id}`} key={id}>
-              <SummerCards text={text} />
+              <SummerCards text={text} image={img} />
             </Link>
           ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
