@@ -97,15 +97,18 @@ const Footer = () => {
 
             <form className="relative">
               <input
-              placeholder="Subscribe to our email"
+                placeholder="Subscribe to our email"
                 className="p-[20px] border border-[#555353] rounded-[20px] w-full relative"
-                type="text"
+                type="email"
+                required
               />
               <button className="absolute right-[5px] top-[5px] p-[15px] rounded-[20px] bg-[#ff0000] text-white cursor-pointer hover:bg-black transition-colors duration-300 ease-in-out">
                 Subscribe
               </button>
 
-              <p className="mt-[40px] mb-[14px] text-[#4e4e4e] text-[14px]">Select at least one list.</p>
+              <p className="mt-[40px] mb-[14px] text-[#4e4e4e] text-[14px]">
+                Select at least one list.
+              </p>
             </form>
           </div>
         </div>
