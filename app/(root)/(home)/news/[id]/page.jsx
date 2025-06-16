@@ -1,6 +1,7 @@
 "use client"
 
 import { newsData } from '@/api/newsData'
+import Connection from '@/components/shared/connection'
 import { useParams } from 'next/navigation'
 import React from 'react'
 
@@ -11,7 +12,10 @@ const NewsDynamicPage = () => {
     const newsResult = newsData?.find((data) => data?.id.toString() === id);
     console.log(newsResult);
   return (
-    <div>NewsDynamicPage</div>
+    <div className='max-w-[1440px] mx-auto px-[20px]'>NewsDynamicPage
+
+        <Connection />
+    </div>
   )
 }
 

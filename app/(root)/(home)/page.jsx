@@ -8,6 +8,7 @@ import Quality from '@/components/shared/quality'
 import Service from '@/components/shared/service'
 import SummerCollection from '@/components/shared/summer-collection'
 import React from 'react'
+import { ToastContainer } from 'react-toastify'
 
 const page = () => {
   return (
@@ -21,6 +22,7 @@ const page = () => {
       <Material />
       <SummerCollection />
       <News />
+      <ToastContainer />
     </>
   )
 }

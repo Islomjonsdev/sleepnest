@@ -1,7 +1,12 @@
+import Connection from "@/components/shared/connection";
 import React from "react";
 
 const Contacts = () => {
-  return <div>Contacts</div>;
+  return (
+    <div>
+      <Connection />
+    </div>
+  );
 };
 
 export default Contacts;
