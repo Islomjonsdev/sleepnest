@@ -2,7 +2,7 @@ import React from 'react'
 
 const Collection = () => {
   return (
-    <div>Collection</div>
+    <div className='mt-[50px]'>Collection</div>
   )
 }
 
