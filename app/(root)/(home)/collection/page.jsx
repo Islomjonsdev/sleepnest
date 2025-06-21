@@ -10,8 +10,9 @@ import CollectionCard from "@/components/shared/collectionCard";
 
 const Collection = () => {
   const [selectCategories, setSelectCategories] = useState(
-    "Barcha kategoriyala"
+    "Barcha kategoriyalar"
   );
+  const [searchCategories, setSearchCategories] = useState("");
   const btnCategiries = [
     "Barcha kategoriyalar",
     "Winter Collection",
@@ -23,6 +24,10 @@ const Collection = () => {
     selectCategories === "Barcha kategoriyalar"
       ? collectionData
       : collectionData?.filter((item) => item?.category === selectCategories);
+
+  const searchByTitle = filterData?.filter((searchTitle) =>
+    searchTitle?.title?.toLowerCase()?.includes(searchCategories?.toLowerCase())
+  );
   return (
     <div className="mt-[50px]">
       <div className="max-w-[1440px] mx-auto px-[20px]">
@@ -33,6 +38,7 @@ const Collection = () => {
                 className="relative"
                 type="search"
                 placeholder="Searching for..."
+                onChange={(e) => setSearchCategories(e.target.value)}
               />
               <Button className="absolute top-0 right-[15px] top-[10px] rounded-full bg-[red] w-[46px] h-[46px] cursor-pointer">
                 <Search />
@@ -43,14 +49,20 @@ const Collection = () => {
             </div>
             <div className="flex flex-col items-start">
               {btnCategiries?.map((btn) => (
-                <button className="mb-4 cursor-pointer" key={btn} onClick={() => setSelectCategories(btn)}>
+                <button
+                  className={`mb-4 cursor-pointer ${
+                    selectCategories === btn ? "text-[#a17f4a]" : ""
+                  }`}
+                  key={btn}
+                  onClick={() => setSelectCategories(btn)}
+                >
                   {btn}
                 </button>
               ))}
             </div>
           </div>
           <div className="md:col-span-2 grid grid-cols-4 gap-4">
-            {filterData?.map(({ id, img, title, category }) => (
+            {searchByTitle?.map(({ id, img, title, category }) => (
               <Link key={id} href={"/"}>
                 <CollectionCard img={img} title={title} category={category} />
               </Link>
