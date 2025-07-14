@@ -67,9 +67,9 @@ const Header = () => {
                   );
                 })}
               </ul>
-              <button className="hidden lg:block">
+              <Link href={"/like"} className="hidden lg:block">
                 <FcLike className="w-[20px] h-[20px]" />
-              </button>
+              </Link>
               <select>
                 {option?.map((option, id) => (
                   <option key={id}>{option}</option>
@@ -121,9 +121,9 @@ const Header = () => {
                   );
                 })}
               </ul>
-              <button className="block">
+              <Link href={"/like"} className="block">
                 <FcLike className="w-[20px] h-[20px]" />
-              </button>
+              </Link>
             </div>
           </div>
         </Modal>
