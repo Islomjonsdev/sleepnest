@@ -76,7 +76,7 @@ const Form = () => {
             onChange={(e) => setUserMessage(e.target.value)}
           />
         </div>
-        <button className="bg-[red] max-w-[151px] w-full py-[15px] text-white text-[13px] rounded-[25px]">
+        <button className="bg-[red] max-w-[151px] w-full py-[15px] flex items-center justify-center text-white text-[13px] rounded-[25px]">
           {loading ? <Loading /> : "Send"}
         </button>
       </form>
